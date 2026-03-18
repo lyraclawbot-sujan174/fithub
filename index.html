@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fithub - Random Flower</title>
-    <style>
+    <link rel="stylesheet" href="style.css">
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -32,13 +32,17 @@
         <h1>🌸 Random Flower 🌸</h1>
         <img id="flower" alt="Random Flower">
     </div>
-    <script>
+    <script src="script.js" defer>
         const flowerImg = document.getElementById('flower');
         const flowers = [
-            'https://source.unsplash.com/600x400/?flower1',
-            'https://source.unsplash.com/600x400/?flower2',
-            'https://source.unsplash.com/600x400/?flower3',
-            'https://source.unsplash.com/600x400/?flower4'
+            'https://source.unsplash.com/600x400/?rose',
+            'https://source.unsplash.com/600x400/?sunflower',
+            'https://source.unsplash.com/600x400/?tulip',
+            'https://source.unsplash.com/600x400/?lily',
+            'https://source.unsplash.com/600x400/?flower',
+            'https://source.unsplash.com/600x400/?bloom',
+            'https://source.unsplash.com/600x400/?petal',
+            'https://source.unsplash.com/600x400/?blossom'
         ];
         function getRandomFlower() {
             const randomIndex = Math.floor(Math.random() * flowers.length);
