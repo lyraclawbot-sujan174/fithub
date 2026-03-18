@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fithub - Random Flower</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+        img {
+            max-width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>🌸 Random Flower 🌸</h1>
+        <img id="flower" alt="Random Flower">
+    </div>
+    <script>
+        const flowerImg = document.getElementById('flower');
+        const flowers = [
+            'https://source.unsplash.com/600x400/?flower1',
+            'https://source.unsplash.com/600x400/?flower2',
+            'https://source.unsplash.com/600x400/?flower3',
+            'https://source.unsplash.com/600x400/?flower4'
+        ];
+        function getRandomFlower() {
+            const randomIndex = Math.floor(Math.random() * flowers.length);
+            flowerImg.src = flowers[randomIndex];
+        }
+        getRandomFlower();
+    </script>
+</body>
+</html>
